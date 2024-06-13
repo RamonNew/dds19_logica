@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        n = []
+        contaPos = 0
+        contaNeg = 0
+
+        for (let i = 0; i < 10; i++){
+            n[i] = +(prompt('Enter a number: '))
+
+            n[i] >= 1 ? contaPos ++ : n[i] < 0 ? contaNeg ++ : contaNeg += 0   
+        }
+
+        alert(`Números negativos: ${contaNeg} \nNúmeros positivos: ${contaPos}`)
+    </script>
+</body>
+</html>
