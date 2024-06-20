@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        idade = prompt("Informe sua idade:")
+        idade = Number(idade)
+
+        categ = "Categoria: " 
+        idade < 13 ? categ += "Infantil" : idade < 18 ? categ += "Adolescente" : idade < 59 ? categ += "adulto" : categ += "Idoso"
+        alert(categ)
+    </script>
+</body>
+</html>
