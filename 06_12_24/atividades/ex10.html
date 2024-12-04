@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = []
+
+        for (let i = 0; i < 10; i++){
+            n[i] = +(prompt(`Enter the ${i + 1}º number:`))
+        }
+
+        console.log(n)
+
+        for (let v = 0; v < n.length; v++){
+            let org = v
+            let aux = n[org]
+
+            while (org > 0 && n[org - 1] > aux){
+                n[org] = n[org - 1]
+                org --
+            }
+
+            n[org] = aux 
+        }
+        console.log(n)
+
+        alert(`Bigger number: ${n[n.length - 1]} \nLower number: ${n[0]}`)
+        
+    </script>
+</body>
+</html>
